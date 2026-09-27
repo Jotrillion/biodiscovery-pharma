@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BioDiscovery Pharma | Cibles</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="targets">
+    <div class="app-layout">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">B</div>
+          <h3>BioDiscovery</h3>
+        </div>
+
+        <nav class="nav-list">
+          <div class="nav-item" data-page="dashboard" data-link="dashboard.html">Tableau de bord</div>
+          <div class="nav-item" data-page="projects" data-link="projects.html">Projets</div>
+          <div class="nav-item active" data-page="targets">Cibles</div>
+          <div class="nav-item" data-page="molecules" data-link="molecules.html">Molécules</div>
+          <div class="nav-item" data-page="reports" data-link="reports.html">Rapports</div>
+          <div class="nav-item" data-page="settings" data-link="settings.html">Paramètres</div>
+        </nav>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <h1>Priorisation des cibles</h1>
+          <button class="primary-btn" type="button">Exécuter l’IA</button>
+        </header>
+
+        <section class="panel">
+          <div class="panel-header">
+            <h2>Score de priorisation</h2>
+            <span class="priority-score">Score global : 92.4</span>
+          </div>
+
+          <div class="filter-bar">
+            <input id="targetSearch" type="text" placeholder="Recherche par gène, maladie ou voie" />
+            <select>
+              <option value="all">Type de cible</option>
+              <option>Kinase</option>
+              <option>Récepteur</option>
+              <option>Cytokine</option>
+            </select>
+            <select>
+              <option value="all">Niveau de preuve</option>
+              <option>Très fort</option>
+              <option>Fort</option>
+              <option>Moyen</option>
+            </select>
+            <button class="filter-btn" type="button">Appliquer</button>
+          </div>
+
+          <div id="targetSearchStatus" class="search-status">3 cibles affichées</div>
+
+          <div class="table-wrap">
+            <table class="standard-table">
+              <thead>
+                <tr>
+                  <th>Gène</th>
+                  <th>Maladie</th>
+                  <th>Voie</th>
+                  <th>Score</th>
+                  <th>Risque tox.</th>
+                  <th>Probabilité</th>
+                </tr>
+              </thead>
+              <tbody id="targetTableBody">
+                <tr class="target-row" data-search="EGFR Oncologie MAPK PI3K">
+                  <td>EGFR</td>
+                  <td>Oncologie</td>
+                  <td>MAPK / PI3K</td>
+                  <td>96</td>
+                  <td>Faible</td>
+                  <td>Élevée</td>
+                </tr>
+                <tr class="target-row" data-search="KRAS Oncologie RAS MAPK">
+                  <td>KRAS</td>
+                  <td>Oncologie</td>
+                  <td>RAS-MAPK</td>
+                  <td>94</td>
+                  <td>Modéré</td>
+                  <td>Élevée</td>
+                </tr>
+                <tr class="target-row" data-search="MTOR Oncologie mTOR">
+                  <td>MTOR</td>
+                  <td>Oncologie</td>
+                  <td>mTOR</td>
+                  <td>91</td>
+                  <td>Modéré</td>
+                  <td>Élevée</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

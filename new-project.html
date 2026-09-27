@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BioDiscovery Pharma | Nouveau projet</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="projects">
+    <div class="app-layout">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">B</div>
+          <h3>BioDiscovery</h3>
+        </div>
+
+        <nav class="nav-list">
+          <div class="nav-item" data-page="dashboard" data-link="dashboard.html">Tableau de bord</div>
+          <div class="nav-item active" data-page="projects">Projets</div>
+          <div class="nav-item" data-page="targets" data-link="targets.html">Cibles</div>
+          <div class="nav-item" data-page="molecules" data-link="molecules.html">Molécules</div>
+          <div class="nav-item" data-page="reports" data-link="reports.html">Rapports</div>
+          <div class="nav-item" data-page="settings" data-link="settings.html">Paramètres</div>
+        </nav>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <h1>Nouveau projet</h1>
+          <button class="ghost-btn" type="button" data-link="projects.html">Retour</button>
+        </header>
+
+        <section class="panel">
+          <div class="panel-header">
+            <h2>Créer un projet de recherche</h2>
+          </div>
+
+          <form id="projectForm" class="auth-form">
+            <div class="form-grid">
+              <label>
+                <span>Nom du projet</span>
+                <input id="projectName" type="text" placeholder="Projet Onco-Gen" />
+              </label>
+
+              <label>
+                <span>Type de projet</span>
+                <select id="projectType">
+                  <option value="Oncologie">Oncologie</option>
+                  <option value="Immunologie">Immunologie</option>
+                  <option value="Métabolisme">Métabolisme</option>
+                  <option value="Neurologie">Neurologie</option>
+                </select>
+              </label>
+
+              <label>
+                <span>Maladie ou cible</span>
+                <input id="projectDisease" type="text" placeholder="Cancer du poumon" />
+              </label>
+
+              <label>
+                <span>Cible principale</span>
+                <input id="projectTarget" type="text" placeholder="EGFR" />
+              </label>
+
+              <label style="grid-column: 1 / -1;">
+                <span>Description</span>
+                <textarea id="projectDescription" placeholder="Décrivez les objectifs du projet, les hypothèses et le contexte de recherche."></textarea>
+              </label>
+
+              <label>
+                <span>État du projet</span>
+                <select id="projectStatus">
+                  <option value="Actif">Actif</option>
+                  <option value="En cours">En cours</option>
+                  <option value="Brouillon">Brouillon</option>
+                  <option value="Terminé">Terminé</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="row" style="margin-top: 18px;">
+              <button type="submit" class="primary-btn">Créer le projet</button>
+              <button type="button" class="secondary-btn" data-link="projects.html">Annuler</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

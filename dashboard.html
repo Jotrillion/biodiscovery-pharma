@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BioDiscovery Pharma | Tableau de bord</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="dashboard">
+    <div class="app-layout">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">B</div>
+          <h3>BioDiscovery</h3>
+        </div>
+
+        <nav class="nav-list">
+          <div class="nav-item active" data-page="dashboard">Tableau de bord</div>
+          <div class="nav-item" data-page="projects" data-link="projects.html">Projets</div>
+          <div class="nav-item" data-page="targets" data-link="targets.html">Cibles</div>
+          <div class="nav-item" data-page="molecules" data-link="molecules.html">Molécules</div>
+          <div class="nav-item" data-page="reports" data-link="reports.html">Rapports</div>
+          <div class="nav-item" data-page="settings" data-link="settings.html">Paramètres</div>
+        </nav>
+
+        <div class="sidebar-footer">
+          <h4>Alertes de recherche</h4>
+          <p>3 cibles requièrent validation complémentaire avant lancement du pipeline.</p>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <h1>Tableau de bord</h1>
+          <div class="user-wrap">
+            <div class="avatar">DR</div>
+            <div>
+              <strong class="user-name">Dr. R. Martin</strong><br />
+              <small class="user-role">Chef de projet</small>
+            </div>
+            <button class="ghost-btn logout-btn" type="button">Déconnexion</button>
+          </div>
+        </header>
+
+        <section class="page-grid">
+          <div class="metric-card">
+            <span class="metric-label">Projets actifs</span>
+            <strong>38</strong>
+            <small>+12% ce mois</small>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">Cibles prioritaires</span>
+            <strong>21</strong>
+            <small>7 urgents</small>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">Analyses</span>
+            <strong>148</strong>
+            <small>+19 aujourd'hui</small>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">Médicaments candidats</span>
+            <strong>96</strong>
+            <small>23 très prometteurs</small>
+          </div>
+        </section>
+
+        <section class="content-grid">
+          <div class="panel">
+            <div class="panel-header">
+              <h2>Cibles prioritaires</h2>
+              <button class="filter-btn" type="button">Filtrer</button>
+            </div>
+
+            <div class="table-wrap">
+              <table class="standard-table">
+                <thead>
+                  <tr>
+                    <th>Cible</th>
+                    <th>Maladie</th>
+                    <th>Voie</th>
+                    <th>Score</th>
+                    <th>Statut</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="target-row">
+                    <td>EGFR</td>
+                    <td>Oncologie</td>
+                    <td>MAPK / PI3K</td>
+                    <td>96</td>
+                    <td><span class="badge high">Élevé</span></td>
+                  </tr>
+                  <tr class="target-row">
+                    <td>KRAS</td>
+                    <td>Oncologie</td>
+                    <td>RAS-MAPK</td>
+                    <td>94</td>
+                    <td><span class="badge high">Élevé</span></td>
+                  </tr>
+                  <tr class="target-row">
+                    <td>VEGFA</td>
+                    <td>Angiogenèse</td>
+                    <td>VEGF</td>
+                    <td>91</td>
+                    <td><span class="badge high">Élevé</span></td>
+                  </tr>
+                  <tr class="target-row">
+                    <td>TNF</td>
+                    <td>Inflammation</td>
+                    <td>NF-kB</td>
+                    <td>84</td>
+                    <td><span class="badge medium">Moyen</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Alertes</h3>
+            </div>
+            <div class="timeline">
+              <div class="alert-item">
+                <p><strong>Validation requise</strong></p>
+                <p>La cible PI3KCA a besoin d’une vérification de documentation.</p>
+              </div>
+              <div class="alert-item">
+                <p><strong>Nouvelle analyse</strong></p>
+                <p>Le jeu de données transcriptomique a été ajouté au projet 4.</p>
+              </div>
+              <div class="alert-item">
+                <p><strong>Pipeline IA</strong></p>
+                <p>Le modèle de priorisation a été recalibré avec une meilleure précision.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <h2>Dernières analyses</h2>
+          </div>
+
+          <div class="mini-grid">
+            <div class="small-card">
+              <span>Analyse multi-omics</span>
+              <strong>94/100</strong>
+              <small>Projet Cardio-02</small>
+            </div>
+            <div class="small-card">
+              <span>Voies de signalisation</span>
+              <strong>18</strong>
+              <small>Signalisation activée</small>
+            </div>
+            <div class="small-card">
+              <span>Biomarqueurs</span>
+              <strong>37</strong>
+              <small>Validés</small>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

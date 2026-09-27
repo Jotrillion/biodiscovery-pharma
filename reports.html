@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BioDiscovery Pharma | Rapports</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="reports">
+    <div class="app-layout">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">B</div>
+          <h3>BioDiscovery</h3>
+        </div>
+
+        <nav class="nav-list">
+          <div class="nav-item" data-page="dashboard" data-link="dashboard.html">Tableau de bord</div>
+          <div class="nav-item" data-page="projects" data-link="projects.html">Projets</div>
+          <div class="nav-item" data-page="targets" data-link="targets.html">Cibles</div>
+          <div class="nav-item" data-page="molecules" data-link="molecules.html">Molécules</div>
+          <div class="nav-item active" data-page="reports">Rapports</div>
+          <div class="nav-item" data-page="settings" data-link="settings.html">Paramètres</div>
+        </nav>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <h1>Rapports et export</h1>
+          <button class="primary-btn" type="button">Exporter PDF</button>
+        </header>
+
+        <section class="panel">
+          <div class="panel-header">
+            <h2>Résumé analytique</h2>
+          </div>
+
+          <div class="mini-grid">
+            <div class="small-card">
+              <span>Voies identifiées</span>
+              <strong>17</strong>
+            </div>
+            <div class="small-card">
+              <span>Biomarqueurs</span>
+              <strong>34</strong>
+            </div>
+            <div class="small-card">
+              <span>Recommandations</span>
+              <strong>9</strong>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

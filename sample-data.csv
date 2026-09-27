@@ -1,0 +1,12 @@
+gene,disease_area,pathway,target_class,lead_molecule,priority
+EGFR,Oncology,MAPK / PI3K signaling,Receptor tyrosine kinase,Gefitinib,96
+KRAS,Oncology,RAS-MAPK pathway,GTPase signaling,Sotorasib,94
+TP53,Oncology,DNA damage response,Tumor suppressor,APR-246,89
+AKT1,Oncology,PI3K-AKT pathway,Kinase,MK-2206,88
+BRAF,Oncology,MAPK signaling,Kinase,Vemurafenib,92
+BRCA1,Oncology,Homologous recombination,DNA repair,Olaparib,87
+IL6,Inflammation,JAK-STAT signaling,Cytokine,Tocilizumab,80
+TNF,Inflammation,NF-kB signaling,Cytokine,Infliximab,84
+VEGFA,Angiogenesis,Angiogenesis signaling,Growth factor,Bevacizumab,90
+MTOR,Oncology,mTOR signaling,Kinase,Everolimus,91
+PIK3CA,Oncology,PI3K-AKT pathway,Kinase,Alpelisib,90

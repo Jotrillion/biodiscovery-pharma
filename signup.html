@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BioDiscovery Pharma | Créer un compte</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="auth-body">
+    <div class="auth-shell">
+      <aside class="auth-hero">
+        <div class="hero-badge">Accès à la plateforme</div>
+        <h1>Rejoignez BioDiscovery</h1>
+        <p>
+          Créez votre compte pour accéder aux projets, analyser les cibles et collaborer sur
+          vos pipelines de découverte de médicaments.
+        </p>
+
+        <div class="hero-stats">
+          <div>
+            <strong>24/7</strong>
+            <span>accès aux projets</span>
+          </div>
+          <div>
+            <strong>12</strong>
+            <span>équipes actives</span>
+          </div>
+          <div>
+            <strong>AI</strong>
+            <span>priorisation</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="auth-panel">
+        <div class="auth-card">
+          <div class="auth-header">
+            <span class="auth-kicker">Nouvel utilisateur</span>
+            <h2>Créer un compte</h2>
+          </div>
+
+          <form class="auth-form" id="signupForm">
+            <label>
+              <span>Nom complet</span>
+              <input id="signupName" type="text" placeholder="Dr. Alice Ndaye" />
+            </label>
+
+            <label>
+              <span>Email</span>
+              <input id="signupEmail" type="email" placeholder="alice@biodiscovery.fr" />
+            </label>
+
+            <label>
+              <span>Mot de passe</span>
+              <input id="signupPassword" type="password" placeholder="Minimum 6 caractères" />
+            </label>
+
+            <button type="submit" class="primary-btn full-width">Créer le compte</button>
+            <button type="button" class="secondary-btn full-width" data-link="index.html">Retour à la connexion</button>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

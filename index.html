@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BioDiscovery Pharma | Connexion</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="auth-body">
+    <div class="auth-shell">
+      <aside class="auth-hero">
+        <div class="hero-badge">Plateforme de découverte de médicaments</div>
+        <h1>BioDiscovery Pharma</h1>
+        <p>
+          Identifiez des cibles thérapeutiques, analysez des données omiques et priorisez
+          les molécules les plus prometteuses pour la recherche biomédicale.
+        </p>
+
+        <div class="hero-stats">
+          <div>
+            <strong>1.2K+</strong>
+            <span>gènes analysés</span>
+          </div>
+          <div>
+            <strong>38</strong>
+            <span>projets actifs</span>
+          </div>
+          <div>
+            <strong>94%</strong>
+            <span>priorisation IA</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="auth-panel">
+        <div class="auth-card">
+          <div class="auth-header">
+            <span class="auth-kicker">Accès sécurisé</span>
+            <h2>Connexion</h2>
+          </div>
+
+          <form class="auth-form" id="loginForm">
+            <label>
+              <span>Email</span>
+              <input id="emailInput" type="email" value="researcher@biodiscovery.fr" />
+            </label>
+
+            <label>
+              <span>Mot de passe</span>
+              <input id="passwordInput" type="password" value="123456" />
+            </label>
+
+            <div class="row between">
+              <label class="checkbox-row">
+                <input type="checkbox" checked />
+                <span>Se souvenir de moi</span>
+              </label>
+              <a href="#">Mot de passe oublié ?</a>
+            </div>
+
+            <div id="loginStatus" class="auth-status" aria-live="polite"></div>
+
+            <button type="submit" class="primary-btn full-width" data-action="login">
+              Se connecter
+            </button>
+
+            <button type="button" class="secondary-btn full-width" data-link="signup.html">
+              Créer un compte
+            </button>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
